@@ -1,0 +1,57 @@
+*{
+    font-family: "Lucida Grande", Arial, sans-serif;
+    color: rgb(79,79,79); 
+}
+.card {
+    width: 200px;
+    height: 290px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50,50, 0.25) 0 6px 12px -2px, rgba(0,0,0,0.3) 0 3px 7px -3px;
+    text-align: center;
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    opacity: 0.3;
+    transform: scale3d(0.8, 0.8, 1);
+    transition: all 0.3s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+    transition: all 0.3s ease-in-out;
+}
+
+.card p {
+    padding: 0 20px;
+}
+
+#review-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card .image-container{
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    overflow: hidden;
+}
+
+.card .image-container img{
+    height: 100%;
+    margin-left: -25%;
+
+}
+.card  .name-container {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(231, 288, 253);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+
+    
+}
